@@ -28,7 +28,7 @@ If you find this script is useful to you, donation will be appreciated: **0x434D
 * 把有测试币的钱包私钥放在.env 文件里面的PRIVATE_KEY后面。比如：PRIVATE_KEY=000000000
 
 ## 运行铸造4个NFT
-`node EvmosiansNFT.js`
+`node EvmosiansNft.js`
 
 备注: 运行程序后，会自动生成一个新的钱包，并从你的钱包里发送0.00001 PHOTON到新钱包用于铸造NFT。铸造后，会按以下格式保存私钥: 
 `钱包地址:钱包私钥:铸造的交易ID`
