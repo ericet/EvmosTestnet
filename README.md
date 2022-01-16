@@ -10,7 +10,7 @@
 * Put your private key(keys) into PRIVATE_KEY field. Eg: PRIVATE_KEY=000000000
 
 ## Minting all 4 Evmosians NFTs
-* `node EvmosiansNFT.js`
+* `node EvmosiansNft.js`
 
 Notes: 
 * Keys are saved to keys.txt with the following format: WALLET_ADDRESS:PRIVATE_KEY:MINT_TRANSACTION_ID
