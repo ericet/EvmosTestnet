@@ -14,8 +14,8 @@ async function start() {
         console.log("ADDRESS: " + wallet.address);
         console.log("PRIVATE KEY: " + wallet.privateKey);
         await transferToMint(wallet, faucetWallet)
-        console.log("Minting Evmosian NFT");
-        await mintEvmosiansNFT(wallet, '0x7ed7D20698931c98Ecc8F4Fe95eE7CEBe35b6548');
+        // console.log("Minting Evmosian NFT");
+        // await mintEvmosiansNFT(wallet, '0x7ed7D20698931c98Ecc8F4Fe95eE7CEBe35b6548');
         console.log("Minting Validator NFT");
         await mintEvmosiansNFT(wallet, '0xF12Aa72B237C1B936f5917BF0f90c1D8b7D29a1D');
         console.log("Minting Builder NFT");
