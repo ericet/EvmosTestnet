@@ -10,14 +10,14 @@ async function start() {
     for (let i = 0; i <= 1000; i++) {
         const account = ethers.Wallet.createRandom();
         let faucetWallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
-        let wallet = new ethers.Wallet(account.address, provider);
-        console.log("ADDRESS: " + wallet.address);
-        console.log("PRIVATE KEY: " + wallet.privateKey);
+        let wallet = new ethers.Wallet(account.privateKey, provider);
+        console.log("ADDRESS: " + account.address);
+        console.log("PRIVATE KEY: " + account.privateKey);
         await transferToMint(wallet, faucetWallet)
         // console.log("Minting Evmosian NFT");
         // await mintEvmosiansNFT(wallet, '0x7ed7D20698931c98Ecc8F4Fe95eE7CEBe35b6548');
-        console.log("Minting Validator NFT");
-        await mintEvmosiansNFT(wallet, '0xF12Aa72B237C1B936f5917BF0f90c1D8b7D29a1D');
+        // console.log("Minting Validator NFT");
+        // await mintEvmosiansNFT(wallet, '0xF12Aa72B237C1B936f5917BF0f90c1D8b7D29a1D');
         console.log("Minting Builder NFT");
         await mintEvmosiansNFT(wallet, '0x53a6ab26100898915e500661c603082c065d1e77');
         console.log("Minting Educator NFT");
